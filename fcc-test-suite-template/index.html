@@ -10,10 +10,23 @@
  <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <form id="survey-form">
-      //Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text
-      <input type="text" id="name" required>Enter your name</input>
-      <input type="email" id="email" required>Enter your email</input>
-      <input id="number" type="number" required min="0" max="150">Age</input>
+
+      <label for="current roles">Which option best describes your current role?</label>
+      <select id="dropdown" name="roles">
+        <option value="full time">Full Time Learner</option>
+        <option value="part time">Part Time Learner</option>
+        <option value="student">Student</option>
+        <option value="not decided">Not Decided</option>
+      </select> <br>
+
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" required placeholder="Enter your name"> <br>
+      
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" required placeholder="Enter your email"> <br>
+
+      <label for="number" id="number-label">Age(optional)</label>
+      <input id="number" type="number" min="0" max="150" placeholder="Age"> <br>
 
   
      </form>
